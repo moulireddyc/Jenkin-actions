@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: workflow-output
-          path: output1.txt
+          path: output.txt
