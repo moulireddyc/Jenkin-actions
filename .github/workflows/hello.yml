@@ -27,3 +27,10 @@ jobs:
 
       - name: Print server name
         run: uname -a
+
+      - name: Force output
+        run: |
+          echo "=== TEST OUTPUT ==="
+          pwd
+          whoami
+          env | sort
