@@ -15,15 +15,15 @@ jobs:
 
       - name: Generate output file
         run: |
-          echo "Hello, GitHub Actions!" > output.txt
-          date >> output.txt
-          uname -a >> output.txt
-          pwd >> output.txt
-          whoami >> output.txt
-          #env | sort >> output.txt
+          echo "Hello, GitHub Actions!" > output1.txt
+          date >> output1.txt
+          uname -a >> output1.txt
+          pwd >> output1.txt
+          whoami >> output1.txt
+          #env | sort >> output1.txt
 
       - name: Upload output as artifact
         uses: actions/upload-artifact@v4
         with:
           name: workflow-output
-          path: output.txt
+          path: output1.txt
