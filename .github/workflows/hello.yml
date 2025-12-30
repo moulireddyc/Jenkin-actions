@@ -20,10 +20,10 @@ jobs:
           uname -a >> output.txt
           pwd >> output.txt
           whoami >> output.txt
-          env | sort >> output.txt
+          #env | sort >> output.txt
 
       - name: Upload output as artifact
         uses: actions/upload-artifact@v4
         with:
           name: workflow-output
-          path: output.txt
+          path: output1.txt
