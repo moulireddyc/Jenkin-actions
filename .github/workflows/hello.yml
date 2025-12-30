@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, GitHub Actions!"
+      
+      - name: Print date
+        run: date
